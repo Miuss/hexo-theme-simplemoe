@@ -1,0 +1,5 @@
+<header class="nav">
+		<% for (var i in theme.menu){ %>
+          <a class="<%= is_current(theme.menu[i]) ? 'active' : '' %>" href="<%- url_for(theme.menu[i]) %>"><b><%= i %></b></a>
+        <% } %>
+</header>

@@ -1,0 +1,42 @@
+<div class="article-header">
+    <div class="article-title">
+		<% if (page.category == 'code') { %>
+    	<h1>代码</h1>
+		<p><%= theme.codec %></p>
+		<% } %>
+		<% if (page.category == 'photos') { %>
+    	<h1>相册</h1>
+		<p><%= theme.photosc %></p>
+		<% } %>
+		<% if (page.category == 'feel') { %>
+    	<h1>后感</h1>
+		<p><%= theme.feelc %></p>
+		<% } %>
+    </div>
+</div>
+<% if (page.category == 'code'||page.category == 'feel') { %>
+<div class="article-body">
+	<div class="archive">
+	  <% page.posts.each(function (post) { %>
+		<div class="archive-post">
+			<a class="archive-post-title" href="<%- url_for(post.path) %>">
+				<h2><%= post.title %></h2>
+				<p class="archive-post-date"><span class="archive-post-author"><%= config.author %></span><%= date(post.date, "YYYY-MM-DD") %></p>
+			</a>
+        </div>
+	  <% }) %>
+	</div>
+</div>
+<% } else { %>
+<div class="article-body">
+	<div class="photos">
+		<% page.posts.each(function (post) { %>
+			<div class="photos-item">
+				<a href="<%- url_for(post.path) %>">
+				<div class="cover"><img src="<%= post.bgimg %>"><i><%= post.imgs %></i></div>
+				<div class="info"><h2><%= post.title %></h2><time><%= date(post.date, "YYYY-MM-DD") %></time></div></a>
+			</div>
+		<% }) %>
+	</div>
+</div>
+<% } %>

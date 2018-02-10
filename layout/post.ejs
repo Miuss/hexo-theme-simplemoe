@@ -1,0 +1,76 @@
+<% if(!page.bgimg) { %>
+<article class="article-post article-single-box">
+	<div class="post-head">
+		<div class="post-title">
+			<h1><%= page.title %></h1>
+		</div>
+		<div class="post-meta">
+			<p>
+				<a href="/" class="user-link">
+					<img src="<%= theme.authorimg %>"><%= config.author %>
+				</a>
+				<time><%- date(page.date, "YYYY-MM-DD") %></time>
+			</p>
+		</div>
+	</div>
+	<div class="post-content">
+		<%- page.content %>
+	</div>
+	<div id="comment"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="/js/gitment.browser.zh-CN.js"></script>
+	<script>
+	var gitment = new Gitment({
+		// id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
+		// https://github.com/imsun/gitment/issues/55
+		// 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
+		id: '<%= page.title %>', 
+		owner: '<%= theme.gitment.githubID %>', // 可以是你的GitHub用户名，也可以是github id
+		repo: '<%= theme.gitment.repo %>',
+		oauth: {
+			client_id: '<%= theme.gitment.ClientID %>',
+			client_secret: '<%= theme.gitment.ClientSecret %>',
+		}
+	})
+	gitment.render('comment')
+	</script>
+</article>
+<% } else { %>
+<article class="article-post article-single-box">
+	<div class="post-head">
+		<div class="post-title">
+			<h1><%= page.title %></h1>
+		</div>
+		<div class="post-meta">
+			<p>
+				<a href="/" class="user-link">
+					<img src="<%= theme.authorimg %>"><%= config.author %>
+				</a>
+				<time><%- date(page.date, "YYYY-MM-DD") %></time>
+			</p>
+		</div>
+	</div>
+	<div class="post-content">
+		<%- page.content %>
+	</div>
+	<div id="comment"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="/js/gitment.browser.zh-CN.js"></script>
+	<script>
+	var gitment = new Gitment({
+		// id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
+		// https://github.com/imsun/gitment/issues/55
+		// 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
+		id: '<%= page.title %>', 
+		owner: '<%= theme.gitment.githubID %>', // 可以是你的GitHub用户名，也可以是github id
+		repo: '<%= theme.gitment.repo %>',
+		oauth: {
+			client_id: '<%= theme.gitment.ClientID %>',
+			client_secret: '<%= theme.gitment.ClientSecret %>',
+		}
+	})
+	gitment.render('comment')
+	</script>
+</article>
+<% } %>
+

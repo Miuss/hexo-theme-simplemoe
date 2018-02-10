@@ -1,0 +1,32 @@
+# SimpleMoe
+# 版权归属于 @Miuss <https://miuss.org>
+
+# Menu
+menu:
+  谬蜀黍: /
+  代码: /c/code
+  相册: /c/photos
+  后感: /c/feel
+  链接: /links 
+
+# information
+authorimg: https://ww2.sinaimg.cn/large/005zWjpnly1fnxr24bcpej30b40b40t4.jpg
+autograph: 十年饮冰，难凉热血
+codec: 你可以一无所有，但绝不能一无是处。
+photosc: 一个古老的相册。
+feelc: 请不要和我搭话。我讨厌你！
+
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/ 
+gitment:
+    githubID: 
+    repo: 
+    ClientID: 
+    ClientSecret: 
+    lazy: 
+
+
+# Url
+github: https://github.com/miuss
+weibo: https://weibo.com/n/谬蜀黍
+steam: https://steamcommunity.com/id/miuss/

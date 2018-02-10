@@ -1,0 +1,20 @@
+<div class="article-header">
+    <div class="article-title">
+    	<h1>链接</h1>
+		<p>你想要啥，就有啥。</p>
+    </div>
+</div>
+<div class="article-body">
+    <div class="links">
+      <% for (var link in site.data.links) { %>
+        <% var item = site.data.links[link]; %>
+			<div class="link-item">
+				<a href="<%= item.link %>" target="_blank">
+					<img src="<%= item.avatar %>">
+					<h3><%= link %></h3>
+					<p><%= item.desc %></p>
+				</a>
+			</div>
+          <% } %>
+    </div>
+</div>

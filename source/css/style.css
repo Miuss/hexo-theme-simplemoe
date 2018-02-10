@@ -1,0 +1,132 @@
+/*主框架*/
+html {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+html {font: 1.3em -apple-system,BlinkMacSystemFont,"Roboto","Pingfang SC","Microsoft Yahei",sans-serif;}/*字体*/
+body, form, h1, h2, h3, h4, h5, ol, p, ul {margin: 0;}
+body {background-color: #fff;}
+a, p, h1, h2, h3, h4, h5 {color: #484848;}
+a {text-decoration: none;}
+/*tt, code, kbd, samp {font-family: 'SourceCodePro'; }*/
+.m {background: linear-gradient(#f9f9f9,#fff) repeat-x top left;background-size: auto 300px;}
+/*导航*/
+.nav {text-align: center;line-height: 1.5em;font-weight: 200;background-color: #fff;}
+.nav a {padding: 1vh 3vh;display: inline-block;line-height: 2.5em;position: relative;}
+.nav a.active {background-color:#f9f9f9;}
+.nav a b {font-weight: 200;font-size: 1.2em;}
+.nav a.active b {font-weight: 400;}
+.nav a img,.nav a::before {display: inline-block;vertical-align: middle;width: 1.5em;height: 1.5em;margin-top: -.2em;margin-right: .2em;pointer-events: none;}
+.nav a[href="/"]::before {background-image: url(//ww2.sinaimg.cn/large/005zWjpnly1fnxr24bcpej30b40b40t4.jpg);border-radius: 50%;}
+.nav a[href*="/c/code"]:before {background-image: url(/svg/code.svg);}
+.nav a[href*="/c/photos"]:before {background-image: url(/svg/photos.svg);}
+.nav a[href*="/c/feel"]:before {background-image: url(/svg/feel.svg);}
+.nav a[href*="/links"]:before {background-image: url(/svg/links.svg);}
+.nav a::before {content: '';background-size: cover;}
+/*主页*/
+.me {padding: 4em 2em;display: block;text-align: center;}
+.me img {height: 10em;border-radius: 50%;border: 5px solid #fbfbfb;}
+.me h2 {font-size: 3em;font-weight: 200;padding: .3em;}
+.me p {font-style: oblique;font-weight: 200;font-size: 1.1em;color: #bbb;}
+.me-icon {padding: 1.1em 0 0 0}
+.me-icon>a {padding: 0 0.3em}
+
+/*分类*/
+.article-body {background: linear-gradient(#f9f9f9,#fff) repeat-x top left;background-size: auto 300px;}
+.article-header {background-color: #f9f9f9;padding: 3em 0;text-align:  center;}
+.article-title h1 {font-size: 2em;color: #484848;padding: 0 0 .3em 0;}
+.article-title p {font-size: .6em;color: #484848;}
+.archive-post {padding: .5em 0;}
+.archive-post-title h2 {font-weight: 400;padding: 0.3em 0;}
+.archive-post-date {font-size: .6em;opacity: .8;}
+.archive-post-author {margin-right: 5px;}
+
+/*文章页面*/
+article.article-post {max-width: 1000px;padding: 0 20px;margin: 0 auto;}
+.article-single-box {overflow: hidden;animation: fadeinB 1s ease-out backwards;}
+.article-post .post-head {padding: 3em 0 2em 0;}
+.article-post .post-title h1 {font-size: 2em;font-weight: 200;line-height: 1.1;padding-bottom: .7em;}
+.article-post .post-meta p {color: #999;padding-top: .5em;font-size: .8em;}
+.article-post .post-meta>p a,.article-post .post-meta>p span,.article-post .post-meta>p time {display: inline-block;vertical-align: top;margin-right: .5em;}
+.article-post .post-meta>p a.user-link img {display: inline-block;vertical-align: top;width: 30px;height: 30px;border-radius: 9em;margin: -3px 4px 0 0;}
+
+/*文章内容样式*/
+.post-content {font-size: 16px;font-weight: 200;line-height: 1.8;}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5 ,.post-content p {padding: 1em 0;}
+.post-content a {color: #4e4e4e;text-decoration: none;border-bottom: 1px solid #616161;padding-bottom: 1px;}
+.post-content a:hover,.post-content a:focus {color: #000000;border-bottom: 1px solid rgba(45, 45, 45, 0.58);}
+.post-content img {width: 100%;box-shadow: 0 0 10px #c3c3c3;}
+.post-content blockquote {background-color: #f9f9f9;padding: 0 1em;}
+.post-content code {padding: 2px 4px;font-size: 90%;color: #ffffff;background-color: #222222;margin: 0 4px 0 2px;}
+.post-content pre code {padding: 0;font-size: inherit;color: inherit;white-space: pre-wrap;background-color: transparent;border-radius: 0;margin: 0;}
+.post-content .highlight,.post-content pre{position: relative;overflow: hidden;overflow-x: auto;display: block;margin: 0 0 1em 0;background: #222;color: #fff;font-size: 12px;line-height: 18px;padding: 4px 8px 4px 10px;}
+.post-content pre code:after {content: attr(class);position: absolute;top: 0;right: 0;color: #999;line-height: 2.2;padding: 0 .7em;background-color: #525252;}
+/*评论*/
+#comment {margin: 2em 0;}
+#comment  .gitment-footer-container {display:none;}
+/*归档*/
+.archive {max-width: 800px;padding: 0 20px 50px 20px;margin: 0 auto;}
+
+/*相册*/
+.article-body {background: linear-gradient(#f9f9f9,#fff) repeat-x top left;background-size: auto 300px;}
+.article-body .photos {font-size: 16px;padding: 0 1em 10em;text-align: center;max-width: 1600px;margin: 0 auto;}
+.article-body .photos .photos-item {display: inline-block;vertical-align: top;padding: 2em;}
+.article-body .photos .photos-item a {display: block;width: 16em;position: relative;}
+.article-body .photos .photos-item .cover {width: 16em;height: 16em;overflow: hidden;border-radius: .2em;box-shadow: 0 5px 25px rgba(0,128,255,.05);position: relative;}
+.article-body .photos .photos-item .cover img {width: 16em;height: 16em;}
+.article-body .photos .photos-item .cover i {font-style: normal;color: #fff;position: absolute;top: 1em;right: 1em;font-weight: 600;text-shadow: 0 1px 1px rgba(100,100,0,.4);line-height: 1;}
+.article-body .photos .photos-item .info {text-align: left;}
+.article-body .photos .photos-item .info h2 {font-weight: 400;line-height: 1.2;padding: .5em 0 .1em;}
+.article-body .photos .photos-item .info time {font-size: .8em;font-weight: 400;line-height: 2;text-align: left;opacity: .5;}
+
+/*朋友*/
+.article-body .links {padding: 1em 10em 5em 10em;text-align: center;}
+.article-body .links .link-item {display: inline-block;position: relative;text-align: left;margin: 1em 0;}
+.article-body .links .link-item a {border-radius: .5em;height: 4.5em;width: 7em;float: left;padding: 0 0em 0 4.5em;transition: background .3s ease;}
+.article-body .links .link-item a[href]:hover {background-color: rgba(230,244,250,.5);}
+.article-body .links .link-item img {width: 3.5em;height: 3.5em;background: #eee;border-radius: 9em;position: absolute;top: .5em;left: .5em;box-shadow: 0 .5em 2em #f3f3f3;}
+.article-body .links .link-item h3 {font-size: 1em;line-height: 46px;padding-top: 10px;font-weight: 400;}
+.article-body .links .link-item p {opacity: .5;font-size: .65em;}
+
+/*全局*/
+html::-webkit-scrollbar {display:none}
+::selection {background: rgba(0,149,255,.1);}
+
+@media (max-width: 650px){
+	.nav a {padding: 1vh 2vh;}
+	.nav a img, .nav a::before {width: 2em;height: 2em;}
+	.nav a b {display: none;}
+	.post-content pre {margin: 5px -20px;}
+	.post-content blockquote {margin: 0;}
+	.post-content pre code:after {display: none;}
+	.article-body .photos {padding: 0 0em 10em;}
+	.article-body .photos .photos-item {display: block;padding: 2em 0;}
+	.article-body .photos .photos-item a {width: 100%;}
+	.article-body .photos .photos-item .cover {width: 100%;border-radius: 0;}
+	.article-body .photos .photos-item .cover img {width: 100%;}
+	.article-body .photos .photos-item .info {padding: 0 1em;}
+	.article-body .links {padding: 0;}
+	#comment {margin: 5px -10px;}
+	#comment .gitment-editor-footer-tip {display:none;}
+	.archive-post-title h2 {font-size: 1.1em;}
+	.article-post .post-title h1 {font-size: 1.4em;}
+}
+
+@media (max-width: 800px){
+	.nav a {padding: 1vh 1.5vh;}
+	.nav a img, .nav a::before {width: 2em;height: 2em;}
+	.nav a b {display:none;}
+	.post-content pre {margin: 5px -20px;}
+	.post-content blockquote {margin: 0;}
+	.post-content pre code:after {display:none;}
+	.article-body .photos {padding: 0 0em 10em;}
+	.article-body .photos .photos-item {display: block;padding: 2em 0;}
+	.article-body .photos .photos-item a {width: 100%;}
+	.article-body .photos .photos-item .cover {width: 100%;border-radius: 0;}
+	.article-body .photos .photos-item .cover img {width: 100%;}
+	.article-body .photos .photos-item .info {padding: 0 1em;}
+	.article-body .links {padding: 0;}
+	#comment {margin: 5px -10px;}
+	#comment .gitment-editor-footer-tip {display:none;}
+	.archive-post-title h2 {font-size: 1.1em;}
+	.article-post .post-title h1 {font-size: 1.4em;}
+}
+
+
